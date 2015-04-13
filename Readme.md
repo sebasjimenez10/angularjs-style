@@ -182,10 +182,9 @@ But wait a moment, in large AngularJS applications we just not have only compone
       │   ├── card-payment-controller.js
       │   ├── card-payment.html
       ├── profile
-      │   ├── change-email-confirm.html
-      │   ├── edit-profile.html
       │   ├── profile-controller.js
       │   ├── profile.html
+      │   ├── profile-edit.html
       │   └── profile-tab.html
       ├── subscription
       │   ├── subscriptions.html
@@ -231,3 +230,54 @@ But wait a moment, in large AngularJS applications we just not have only compone
       │   └── services // application common services
       └── styles // application common styles
   ```
+
+## Naming Conventions
+
+Use consistent names for all components following a pattern that describes the component's feature then its type. Our encourage pattern is `feature-type.js`. There are 2 names for most assets:
+
+> the file name (`profile-controller.js`) give us
+  ```javascript
+  .controller('ProfileCtrl')
+  ```
+  but if your file is inside a main component, lets say `user` you should name your registered component name with
+  ```javascript
+  .controller('UserProfileCtrl');
+  ```
+  notice the CamelCase.
+
+```javascript
+// services
+auth-service.js
+
+// factories
+user-factory.js
+
+// controllers
+site-controller.js
+
+// directives
+social-buttons-directive.js
+
+// models (optional but recommended)
+user-model.js
+
+// views
+billing-info.html
+
+// multiple views for same component
+profile.html
+profile-edit.html
+profile-tab.html
+
+// configuration
+payment-gateway-config.js
+
+// routes (optional but recommended)
+app.routes.js // or just in app.js
+
+/**
+ * tests, this is the only one who change, because we use karma.js
+ * with jasmine.js, so by default it runs all *.spec.js files
+ */
+{{SAMENAME}}.spec.js
+```
