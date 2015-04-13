@@ -38,7 +38,7 @@ I come from the world of Ruby on Rails development workflow where directory hier
 └── lib
 ```
 
-and so many tutorials out there, but in the AngularJS development workflow we found our self with hundreds of files in the same directory without any order nor convention, having to spent a lot of time and effort naming things, searching files, trying to figure out if we need a Service or Factory and where it's going to be placed. So we, Talos Digital, found our own path to win at AngularJS.
+There are so many tutorials out there, but in the AngularJS development workflow we found ourselves with hundreds of files in the same directory without any order nor convention, having to spend a lot of time and effort naming things, searching files, trying to figure out if we need a Service or Factory and where it's going to be placed. So we, Talos Digital, found our own path to win at AngularJS.
 
 0. Split the application in components and sub-components.
 
@@ -102,7 +102,7 @@ and so many tutorials out there, but in the AngularJS development workflow we fo
               └── transactions
   ```
 
-But wait a moment, in large AngularJS applications we just not have only components, we also have Services, Factories, Models, Directives and More. So we end wrapping our components modules in a `scripts` directory:
+But wait a moment, in large AngularJS applications we don't only have components. We also have Services, Factories, Models, Directives and more. So we end wrapping our components modules in a `scripts` directory:
   ```javascript
   .
   └── app
@@ -136,9 +136,9 @@ But wait a moment, in large AngularJS applications we just not have only compone
           ├── filters // application common filters
           └── services // application common services
   ```
-  So every new intern could find the source `file`/`directory` of a new feature based on given `url`, `component`/`sub-component` (he/she) needs to modify.
+  So every new intern could find the source `file`/`directory` of a new feature based on a given `url`, `component`/`sub-component` they need to modify.
 
-  You may question, what kind of files are in each component directory inside directory hierarchy?
+  You may ask, what kind of files are in each component directory inside a directory hierarchy?
   > R/ each component/sub-component logic (controller) and views goes inside.
 
   ```javascript
@@ -233,17 +233,17 @@ But wait a moment, in large AngularJS applications we just not have only compone
 
 ## Naming Conventions
 
-Use consistent names for all components following a pattern that describes the component's feature then its type. Our encourage pattern is `feature-type.js`. There are 2 names for most assets:
+Use consistent names for all components following a pattern that describes the component's feature then its type. Our encouraged pattern is `feature-type.js`. There are 2 names for most assets:
 
-> the file name (`profile-controller.js`) give us
+> the file name (`profile-controller.js`) gives us
   ```javascript
   .controller('ProfileCtrl')
   ```
-  but if your file is inside a main component, lets say `user` you should name your registered component name with
+  But if your file is inside a main component, say `user`, you should name your registered component as
   ```javascript
   .controller('UserProfileCtrl');
   ```
-  notice the CamelCase.
+  Notice the camelcase.
 
 ```javascript
 // services
@@ -276,7 +276,7 @@ payment-gateway-config.js
 app.routes.js // or just in app.js
 
 /**
- * tests, this is the only one who change, because we use karma.js
+ * tests, this is the only one that changes, because we use karma.js
  * with jasmine.js, so by default it runs all *.spec.js files
  */
 {{SAMENAME}}.spec.js
