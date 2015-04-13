@@ -4,7 +4,7 @@ The goal of this style guide is to present a set of best practices and style gui
 
 0. AngularJS source code.
 0. Source code or articles I've read.
-0. My own experience working in Talos Digital.
+0. Experience working in Talos Digital.
 
 In this style guide you won't find common guidelines for JavaScript development. Such can be found at:
 
