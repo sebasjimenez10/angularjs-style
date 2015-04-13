@@ -281,3 +281,13 @@ app.routes.js // or just in app.js
  */
 {{SAMENAME}}.spec.js
 ```
+
+## Contributing
+
+0. Fork it ( https://github.com/sescobb27/angularjs-style/fork )
+0. Create your a new branch (`git checkout -b my-new-feature`)
+0. Commit your changes (`git commit -am 'Add some feature'`)
+0. Push to the branch (`git push origin my-new-feature`)
+0. Create a new Pull Request
+
+it will keep most of the basic code styling consistent.
