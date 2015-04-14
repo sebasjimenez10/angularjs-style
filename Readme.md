@@ -20,7 +20,7 @@ In this style guide you won't find common guidelines for JavaScript development.
 
 Since a large AngularJS application has many components it's best to structure it in a directory hierarchy.
 
-I come from the world of Ruby on Rails development workflow where directory hierarchy comes in a MVC manner:
+I come from the world of Ruby on Rails development workflow where directory hierarchy comes in a MVC manner like so many tutorials out there:
 ```
 .
 ├── app
@@ -38,7 +38,7 @@ I come from the world of Ruby on Rails development workflow where directory hier
 └── lib
 ```
 
-There are so many tutorials out there, but in the AngularJS development workflow we found ourselves with hundreds of files in the same directory without any order nor convention, having to spend a lot of time and effort naming things, searching files, trying to figure out if we need a Service or Factory and where it's going to be placed. So we, Talos Digital, found our own path to win at AngularJS.
+but in the AngularJS development workflow we found ourselves with hundreds of files in the same directory without any order nor convention, having to spend a lot of time and effort naming things, searching files, trying to figure out if we need a Service or Factory and where it's going to be placed. So we, Talos Digital, found our own path to win at AngularJS.
 
 0. Split the application in components and sub-components.
 
