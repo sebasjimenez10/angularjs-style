@@ -47,7 +47,7 @@ but in the AngularJS development workflow we found ourselves with hundreds of fi
   - sites
   - authorization
 
-0. Base on components make the top routes
+0. Based on components make the top routes
   ```javascript
 
     '/user'
@@ -57,7 +57,7 @@ but in the AngularJS development workflow we found ourselves with hundreds of fi
     '/auth'
   ```
 
-0. Then base on sub-components make the inner routes from top routes
+0. Then based on sub-components make the inner routes from top routes
   ```javascript
 
     // /user
